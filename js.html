@@ -7,12 +7,18 @@
  <body>
   <h1 id='tanaka'>JavaScript test</h1>
   
-  <button onclick ="aloha()">CLICK ME!</button>
-  <img id="gazo" src="yato.jpg">
+  <img id="gazo" src="yato.jpg" onclick="aloha()">
   <script>
+   let num = 0
+
    function aloha(){
+    const files = ['dororo.jpg', 'akagami.jpg', 'tokyoghoul.jpg', 'asta.jpg']
+    num++
+    if(num>=files.length){
+     num = 0
+    }
     let filename = document.getElementById('gazo').src
-    gazo.src = 'school.jpg'
+    gazo.src = files[num]
     console.log( filename )
     document.getElementById('tanaka').style.color = 'tomato'
     console.log('ALOHA!')
