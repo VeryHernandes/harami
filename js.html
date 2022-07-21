@@ -1,0 +1,57 @@
+<!doctype html>
+<html>
+ <head>
+  <meta ccharset="utf-8">
+  <title>JS test</title>
+ </head>
+ <body>
+  <h1 id='tanaka'>JavaScript test</h1>
+  
+  <button onclick ="aloha()">CLICK ME!</button>
+  <img id="gazo" src="yato.jpg">
+  <script>
+   function aloha(){
+    let filename = document.getElementById('gazo').src
+    gazo.src = 'school.jpg'
+    console.log( filename )
+    document.getElementById('tanaka').style.color = 'tomato'
+    console.log('ALOHA!')
+   }
+   alert('ALOHA!')
+   alert('もうすぐ夏休み')
+   console.log('ALOHA!')
+   const a = 3
+   const b = 5
+   const c = a + b
+   console.log(c)
+   
+   if (c>10) {
+    console.log('larger then 10')
+   }else{
+    console.log('small')
+   }
+   
+   const msg = 'ALOHA!'
+   
+   let i = 0
+   while(i<10){
+    console.log( msg )
+    i++
+   }
+   const msc ='hello'
+   for (let i=0; i<10; i++){
+    console.log(msc)
+   }
+   const ciao ='ciao!'
+   const hello ='hello'
+
+   for(let i=0; i<20; i++) {
+    if ( 1%5==0 ) {
+     console.log(hello)
+    }else {
+     console.log( ciao )
+    }
+   }
+  </script>
+ </body>
+</html>
